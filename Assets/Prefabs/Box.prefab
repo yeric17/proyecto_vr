@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b738bffb88b2714e99c1b0f8e45f23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePoints: 5
+  damagePoints: 20
   triggerArea: {fileID: 4446624207180352131}
 --- !u!1 &4446624207534551460
 GameObject:
