@@ -1,0 +1,52 @@
+{
+    "name": "GlobalInputsAction",
+    "maps": [
+        {
+            "name": "PlayerControls",
+            "id": "868d95da-1fba-45db-b4a8-eb57b1e339d6",
+            "actions": [
+                {
+                    "name": "YRotation",
+                    "type": "PassThrough",
+                    "id": "9f0f2920-afb0-43df-b69e-a222b3fa46fe",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "XRotation",
+                    "type": "PassThrough",
+                    "id": "ee28c560-4b3b-40c7-8784-17b0ab3a4467",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6aa55b96-98a5-4780-b96e-dd73a55f1ee7",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "YRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "548af325-aefb-4ce7-904b-363d42291334",
+                    "path": "<Mouse>/delta/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
