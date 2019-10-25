@@ -40,7 +40,7 @@ public class EnemyTowerSystem : MonoBehaviour
         }
         else transform.Rotate(new Vector3(0, -rotateVelocity, 0));
 
-        if (enemyStatus == EnemyStatus.active)
+        if (enemyStatus == EnemyStatus.active && nextShot <=0)
         {
             Instantiate(prefabBullet, shotPoint.position, shotPoint.rotation);
             nextShot = delayShot;

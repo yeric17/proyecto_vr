@@ -7,6 +7,7 @@ public abstract class DamageSystem : MonoBehaviour
 {
     [SerializeField] int damagePoints = 10;
     [SerializeField] private BoxCollider triggerArea = null;
+    [SerializeField] private string tagTarget = "Player";
 
     private void Start() {
         if(triggerArea == null){
@@ -16,10 +17,15 @@ public abstract class DamageSystem : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.GetComponent<HealthSystem>()) {
-            other.gameObject.GetComponent<HealthSystem>().Damage(damagePoints);
-            OnDamage();
-        }
+        Debug.Log(other.tag);
+        
+            if (other.gameObject.CompareTag(tagTarget)) {
+                Debug.Log("Colision 2");
+                other.gameObject.GetComponent<HealthSystem>().Damage(damagePoints);
+                OnDamage();
+            }
+            
+        
     }
 
     public virtual void  OnDamage(){

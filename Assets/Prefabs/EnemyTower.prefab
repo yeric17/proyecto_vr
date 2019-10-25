@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1796522352146430459}
   - component: {fileID: 1796522352146430460}
   - component: {fileID: 1796522352146430407}
-  - component: {fileID: 1796522352146430406}
+  - component: {fileID: 368031829}
   m_Layer: 0
   m_Name: EnemyTower
   m_TagString: Untagged
@@ -2367,7 +2367,7 @@ MonoBehaviour:
   healthPoints: 100
   minHealth: 0
   maxHealth: 100
---- !u!114 &1796522352146430406
+--- !u!114 &368031829
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2379,15 +2379,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8031085ee663248b7f1bb9547bb6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   shotPoint: {fileID: 1796522353756636479}
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
   prefabBullet: {fileID: 2743030096360249736, guid: 9d2a211a2a469934c9711ffaf373c0ca,
     type: 3}
-  detectDistance: 16
+  detectDistance: 25
   rotateVelocity: 0.7
+  delayShot: 2
+  nextShot: 0
 --- !u!1 &1796522353756636464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,10 +2412,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796522353756636464}
-  m_LocalRotation: {x: 0.00000001117587, y: 0.99747205, z: -0.07106119, w: 0.00000008940696}
-  m_LocalPosition: {x: 0.47, y: 3.095, z: -2.31}
+  m_LocalRotation: {x: -0.0000000057184493, y: 0.99953365, z: -0.030538544, w: -0.00000018716618}
+  m_LocalPosition: {x: 0.47, y: 3.06, z: -2.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1796522352146430456}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 8.150001, y: 180.00002, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.5, y: 180.00002, z: 0}
